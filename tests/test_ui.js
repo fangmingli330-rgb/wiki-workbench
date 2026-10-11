@@ -5,7 +5,7 @@ const ui = require('../wiki_workbench/static/app.js');
 test('source and AI text are escaped, including quote delimiters', () => {
   assert.equal(ui.esc('<script a="x">&\'</script>'), '&lt;script a=&quot;x&quot;&gt;&amp;&#39;&lt;/script&gt;');
   const html = ui.noteHTML({id:'1',book_title:'<img src=x onerror=alert(1)>',content:'<script>alert(1)</script>',analysis_status:'ready',analysis:{summary:'<b>AI</b>',reflections:[{text:'<svg/onload=1>',quote:'<script>quote</script>'}]}});
-  assert.ok(!html.includes('<script>')); assert.ok(!html.includes('<svg')); assert.ok(html.includes('&lt;b&gt;AI&lt;/b&gt;'));
+  assert.ok(!html.includes('<script>')); assert.ok(!html.includes('<svg/onload')); assert.ok(html.includes('&lt;svg/onload=1&gt;')); assert.ok(html.includes('&lt;b&gt;AI&lt;/b&gt;'));
 });
 test('drafts are isolated by both workspace and book', () => {
   assert.notEqual(ui.draftKey('/a','book'),ui.draftKey('/b','book'));
@@ -15,6 +15,21 @@ test('drafts are isolated by both workspace and book', () => {
 test('ready AI result is separate from original', () => {
   const html = ui.noteHTML({id:'1',book_title:'书',content:'我自己的原话',analysis_status:'ready',analysis:{summary:'整理摘要',questions:[{text:'问题',quote:'我自己的原话'}]}});
   assert.ok(html.includes('AI 辅助整理，以原文为准')); assert.ok(html.includes('我的原文')); assert.ok(html.includes('我自己的原话'));
+  assert.ok(html.includes('note-preview-label">AI 摘要'));
+  assert.ok(html.indexOf('<h3>我的原文</h3>') < html.indexOf('<h3>AI 整理</h3>'));
+});
+test('a pending or failed AI result cannot become the personal note preview', () => {
+  const html = ui.noteHTML({id:'1',book_title:'书',content:'我的原始想法',analysis_status:'failed',analysis:{summary:'过期的 AI 摘要'}});
+  assert.ok(html.includes('note-preview-label">原文预览'));
+  assert.ok(html.includes('note-preview">我的原始想法'));
+  assert.ok(!html.includes('过期的 AI 摘要'));
+});
+test('empty-state labels remain escaped and decorative icons are not announced', () => {
+  const html = ui.emptyHTML('<script>title</script>','<img onerror=x>','book');
+  assert.ok(html.includes('&lt;script&gt;title&lt;/script&gt;'));
+  assert.ok(html.includes('&lt;img onerror=x&gt;'));
+  assert.ok(html.includes('aria-hidden="true"'));
+  assert.ok(!html.includes('<script>'));
 });
 test('blocked and local notes retain a visible original and honest state', () => {
   assert.equal(ui.noteState({analysis_status:'blocked'}),'整理已暂停');
