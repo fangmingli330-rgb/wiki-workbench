@@ -1,0 +1,128 @@
+{
+  "version": "0.1.0",
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha256": "fef31875e217691a06fb05b5347a6fbab749e977a1d356dd8a4761570ded7f4d"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "f9c61435734bc163d19f6bd34db0217606ad35d3dc4afe60857522ec55d0d650"
+    },
+    {
+      "path": "README.md",
+      "sha256": "831d19afcc18211a9372b590fa7095b629efe5ce07ec10b5029993be8485e0c5"
+    },
+    {
+      "path": "docs/MODULE_API.md",
+      "sha256": "981a187cb51cca6775a5371b8f55bf407e3b32aa388bdddb56e93a99ed19f62d"
+    },
+    {
+      "path": "docs/OPEN_SOURCE_REVIEW.md",
+      "sha256": "51ee854d92392c7d32ddf157432802e7ce6966b7ca3fc1ad76955cb3ae5603f0"
+    },
+    {
+      "path": "examples/host.html",
+      "sha256": "de07ad97eb1bfdfb245127cbd84548bc81e518376aca1c74056abeb75311b9ff"
+    },
+    {
+      "path": "examples/notes/\u5b66\u4e60\u8bb0\u5f55.txt",
+      "sha256": "748535ecc5401a2c79738392103374d5db7e95fdd0d9951b18cc845ca8c8a9af"
+    },
+    {
+      "path": "examples/notes/\u9605\u8bfb\u65b9\u6cd5.md",
+      "sha256": "13f559473889554db0b001591061842dd77688744a507b137fe1f99d19c6cb8d"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "189b3aab6e6817e7617a6153e01e238f5504ded0d9a8f50b43934607b0ce8ab5"
+    },
+    {
+      "path": "tests/test_model.py",
+      "sha256": "cf52444d9510e755f2916b03bdeaa2bedb0467e20af42d47f91612b569d0849e"
+    },
+    {
+      "path": "tests/test_modules.py",
+      "sha256": "801c3269fb167b50279c31af9eb73cad50d1d93cb0f909a5e4c168b177abe08e"
+    },
+    {
+      "path": "tests/test_reading.py",
+      "sha256": "d900a2df58df4ffec8a237a4218e4ee801158eb2069adc4271050b2378f48d30"
+    },
+    {
+      "path": "tests/test_release.py",
+      "sha256": "16699033e23d75787b8d468070220c520b8f76d1fdbb1392055a2379607b451d"
+    },
+    {
+      "path": "tests/test_server.py",
+      "sha256": "5d8ba7411ad5270755b0a4a94636ed4991eb2acfccb288f948d6a3f78591c377"
+    },
+    {
+      "path": "tests/test_ui.js",
+      "sha256": "fbc95b132f4ac2d136fccc4a8a6f9ce9c76b7f231ad3c05e3c489d4a56f0600f"
+    },
+    {
+      "path": "tests/test_workspace.py",
+      "sha256": "bd353cb91d5b9334302ae659812acaa76eabda976540187e86d63b507c200dcf"
+    },
+    {
+      "path": "tools/build_release.py",
+      "sha256": "f9bd898c4c37f387ab06460ef3dc7932e88627d5c1e1f57b62bd575951d3932e"
+    },
+    {
+      "path": "wiki_workbench/__init__.py",
+      "sha256": "aba88277ce1bd63f312b9bc9632d93cf7858b8ee053012701d4ca3dfea30e269"
+    },
+    {
+      "path": "wiki_workbench/__main__.py",
+      "sha256": "0c791d0aaa751117aa51d7230444e34bcf32134d19088cd35dbc412d0b30ca65"
+    },
+    {
+      "path": "wiki_workbench/locking.py",
+      "sha256": "620d9b7ef0cd4de911620c4af9d9b8e8b17b58de125709710d1465e35f405472"
+    },
+    {
+      "path": "wiki_workbench/model.py",
+      "sha256": "340426b0f632a56294a654ad6c714ad53b0cff06246a72e44c3a4c4650170179"
+    },
+    {
+      "path": "wiki_workbench/modules.py",
+      "sha256": "ea5dc8e397e535fc9afbc51acb65daab8d0f37b00791a7658515978004f33473"
+    },
+    {
+      "path": "wiki_workbench/reading.py",
+      "sha256": "876638e72f369fd77f2ea0c6b7b53ad2f2b1ef40b5682b91dff3f6b9854b1970"
+    },
+    {
+      "path": "wiki_workbench/reading_ai.py",
+      "sha256": "0387dfe00864b2a4634b36c66dfb5fbe02854ecb3ffbb707dda5605130507866"
+    },
+    {
+      "path": "wiki_workbench/server.py",
+      "sha256": "ca9401ddb59fd1f0734d15289a8f293aa65399c164027888fef3291ebdf3c13f"
+    },
+    {
+      "path": "wiki_workbench/static/app.js",
+      "sha256": "9eca18dd3b17cce130ab9cf42961d0c4e05b09f4d16aee9f4b120e09c99e894f"
+    },
+    {
+      "path": "wiki_workbench/static/index.html",
+      "sha256": "c39447cc909c21fd8e23fe1c441f398c46004bb60b9017f50be036ba0698d883"
+    },
+    {
+      "path": "wiki_workbench/static/style.css",
+      "sha256": "5552a901c91f79d54417080632f5931dc9f3360bdf226d1ad1a2f49e8ddafea6"
+    },
+    {
+      "path": "wiki_workbench/workspace.py",
+      "sha256": "203e0dd8caaf04d13081e5e864b62b2ff887438f3144cc44e29e09adcd34fab0"
+    }
+  ],
+  "excluded": [
+    "workspaces",
+    "credentials",
+    "model_responses",
+    "git_history",
+    "local_paths"
+  ]
+}
