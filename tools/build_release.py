@@ -48,7 +48,7 @@ def candidates(root=ROOT):
 
 def build(output=None, root=ROOT):
     files = candidates(root)
-    manifest = {'version': '0.1.1', 'files': [{'path': p, 'sha256': hashlib.sha256(raw).hexdigest()} for p, raw in files],
+    manifest = {'version': '0.1.2', 'files': [{'path': p, 'sha256': hashlib.sha256(raw).hexdigest()} for p, raw in files],
                 'excluded': ['workspaces', 'credentials', 'model_responses', 'git_history', 'local_paths']}
     if output:
         output = Path(output)

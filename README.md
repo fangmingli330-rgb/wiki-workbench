@@ -2,9 +2,9 @@
 
 选择一个自己的资料文件夹，建立可追溯的知识库；每日阅读可独立使用，也可接入其他个人工作台。
 
-这是 **0.1.1 本地试用版**。仅依赖 Python 3.10 及以上的标准库，没有投资系统、数据库服务、Node 安装或模型订阅要求。模型 API 由使用者自行配置，默认关闭。新建空文件夹即可开始阅读记录。
+这是 **0.1.2 本地试用版**。仅依赖 Python 3.10 及以上的标准库，没有投资系统、数据库服务、Node 安装或模型订阅要求。模型 API 由使用者自行配置，默认关闭。新建空文件夹即可开始阅读记录。
 
-0.1.1 统一了知识库、阅读、首次使用和设置界面：深色导航与暖白内容区、主题分类、阅读时间线和分组表单。使用系统字体与本地图标，页面不加载第三方字体或 CDN。
+0.1.2 按模块区分界面风格：知识库采用金融研究工作台式的深蓝导航、冷灰画布和紧凑列表；每日阅读保留暖白、书卷气和舒适留白。导航与操作保持一致，切换模块时自动切换主题。使用系统字体与本地图标，页面不加载第三方字体或 CDN。
 
 ## 开始使用
 
@@ -59,7 +59,7 @@ python3 -m wiki_workbench --workspace "/path/to/my-notes" --module reading
 
 ```sh
 python3 tools/build_release.py --check
-python3 tools/build_release.py --output /path/to/wiki-workbench-0.1.1.zip
+python3 tools/build_release.py --output /path/to/wiki-workbench-0.1.2.zip
 ```
 
 测试：`python3 -m unittest discover -s tests`。前端离线测试：`node tests/test_ui.js`（开发检查可选，运行应用不需要 Node）。Mac 本地验收结果不代表已在 Windows/Linux 实机验收。

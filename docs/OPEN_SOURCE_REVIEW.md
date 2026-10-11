@@ -16,3 +16,9 @@
 本次视觉改进先查看 [shadcn/ui](https://github.com/shadcn-ui/ui) 的 [Sidebar 文档](https://ui.shadcn.com/docs/components/sidebar)，以及 [Primer CSS](https://github.com/primer/css) 的 [Dialog 规范](https://primer.style/product/components/dialog/)。两者官方仓库均采用 MIT 许可。借鉴导航分区、可见选中状态、表单分组、弹窗标题与操作区的设计惯例。
 
 现有应用是无构建步骤的 HTML/JavaScript；本轮继续使用已有原生控件、事件处理及原文保护逻辑，不引入 React、Tailwind 或整套组件依赖。图标由本项目绘制，字体使用操作系统已有字体；未复制上述项目源代码或品牌资源。这样保留了 Python 标准库即可运行的安装方式，也避免页面依赖第三方网络资源。
+
+## 0.1.2 按模块区分视觉风格
+
+参考 [Blueprint 官方仓库](https://github.com/palantir/blueprint) 面向密集桌面信息界面的设计，核对其 [Apache-2.0 许可](https://github.com/palantir/blueprint/blob/develop/LICENSE) 和 [样式变量](https://github.com/palantir/blueprint/blob/develop/packages/core/src/common/_variables.scss)。借鉴冷色层级、清晰边界和紧凑控件，应用于知识库与资料检索。每日阅读继续保留暖色与书卷气，通过模块主题区分用途。
+
+仅借鉴布局和信息层级思路，未复制 Blueprint 源码、安装 React 或添加运行时依赖。金融风是界面表达，不增加行情数据或投资判断功能。

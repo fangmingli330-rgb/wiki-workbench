@@ -1,5 +1,5 @@
 {
-  "version": "0.1.1",
+  "version": "0.1.2",
   "files": [
     {
       "path": ".gitignore",
@@ -11,7 +11,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "d4f20557144da81def00d25fc7f20666617c9662456b8c11484ea4d534ac6102"
+      "sha256": "27b26fdf1b5ab875ed47b09d486fcb6a8c2ffec83dab292b1f28bbeaf9e8b360"
     },
     {
       "path": "docs/MODULE_API.md",
@@ -19,7 +19,7 @@
     },
     {
       "path": "docs/OPEN_SOURCE_REVIEW.md",
-      "sha256": "77e8b8a0e714528b5b78783d02d5ec822c6e0115979709ee3e5c4728fa461ae5"
+      "sha256": "c0475b4006e4a406bb61f666734079ea74074d0438e40ae3db62a8351dbf3e26"
     },
     {
       "path": "examples/host.html",
@@ -35,7 +35,7 @@
     },
     {
       "path": "pyproject.toml",
-      "sha256": "d03783b32acc3fc641c2bf3746b8e4b45e79d9c3145d461284c01255f8549ebb"
+      "sha256": "165c9fd85a9f0ef83bc964b80aec64c7aad8b14672503563b26c26756558b732"
     },
     {
       "path": "tests/test_model.py",
@@ -67,11 +67,11 @@
     },
     {
       "path": "tools/build_release.py",
-      "sha256": "ee9c8eb67960a0dd8e779093d72afa49f7a9a6b2518ae1c752d4fe47771b43b3"
+      "sha256": "6c28ef195a1e32f7dc0099170633d3b76c1a5cedfc17fb3f3dbc2657d7eca323"
     },
     {
       "path": "wiki_workbench/__init__.py",
-      "sha256": "5eb8efcd3252c2bb7f908ec74cbf034b48633159a3ef3ae581574599cd3245d4"
+      "sha256": "b12facdac19214569493d6c8ea141c0075999377b757e0f39f1056231e36fe3e"
     },
     {
       "path": "wiki_workbench/__main__.py",
@@ -103,15 +103,15 @@
     },
     {
       "path": "wiki_workbench/static/app.js",
-      "sha256": "1af9b65484da69a0a69aec7a8399d4817464830b0ae1209cd12eca1e6359ffa6"
+      "sha256": "c00b54cdae0a9f897fe6a61716beb8561814d53481a7cebc57ed69b179e11881"
     },
     {
       "path": "wiki_workbench/static/index.html",
-      "sha256": "aa5705a7ef487a12ffc40b4f72639d392a6f1007c5a8985f8271bca62802b4dd"
+      "sha256": "8abf782cddc8105022b16c0654a3c2f1a8a87bb23e6892fa5c217fb78e9adf88"
     },
     {
       "path": "wiki_workbench/static/style.css",
-      "sha256": "f2a4199b166e5f571a1e0f5c14f380df2e8144c4d194f8201e1a4a21144a7611"
+      "sha256": "8b0d97fe541624a4213f1782999cfa6b82d468e7eddd1400ddb583d8030ac6ef"
     },
     {
       "path": "wiki_workbench/workspace.py",
